@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: #303030;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Netflix-img/bg-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    margin: auto;
+       
+
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+nav img {
+    height: 40px;
+    width: 148px;
+    cursor: pointer;
+}
+
+
+
+nav div :first-child {
+    height: 32px;
+    width: 126.4px;
+    padding: 6px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav div :last-child {
+    height: 32px;
+    width: 76.9px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.header-content {
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.header-content h1 {
+    font-size: 48px;
+
+}
+
+.header-content h3 {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+form {
+    margin: 16px;
+
+}
+
+#email-signup1 {
+    color: inherit;
+    padding: 12px 16px;
+    height: 56px;
+    width: 375.26px;
+    /* background: transparent; */
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: black;
+    filter: opacity(0.6);
+    position: relative;
+    top: -2px;
+
+}
+
+form button {
+    height: 56px;
+    width: 202px;
+    background-color: #db0001;
+    color: white;
+    font-size: 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    height: 440px;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    margin-top: 8px;
+    background-color: black;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 438px;
+    text-align: left;
+}
+
+.text h3 {
+    font-size: 48px;
+    padding: 10px;
+
+
+}
+
+.text p {
+    font-size: 24px;
+    margin-left: 115px;
+    margin-top: 16px;
+}
+
+.imagee {
+    width: 40%;
+    height: 438px;
+}
+
+.imagee img {
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+}
+
+.faq {
+
+    background-color: black;
+    margin: 8px auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.faq h2 {
+    margin: 60px auto;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.faq li {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    max-width: 75%;
+    list-style: none;
+    margin: auto;
+}
+
+.faq ul li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid green; */
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 2px;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: "+";
+    position: absolute;
+    font-size: 34px;
+    right: 20px;
+    transition: transform .4s;
+}
+
+.login {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.login form {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.ans {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 8px;
+    background-color: #303030;
+    font-size: 18px;
+    transition: max-height 0.4s, padding .4s;
+}
+
+input[type=radio]:checked+label+.ans {
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+#email-signup2 {
+    color: inherit;
+    padding: 12px 16px;
+    height: 56px;
+    width: 375.26px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    filter: opacity(0.6);
+    position: relative;
+    top: 5px;
+}
+
+input[type=radio]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+footer {
+    padding: 10px;
+    margin-top: 8px;
+    background-color: black;
+}
+
+h2 {
+    margin: 12px 0px 16px 42px;
+    display: inline-block;
+    padding: 12px 0px 0px 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 33px;
+    padding: 10px;
+}
+
+.col a {
+
+    color: #fff;
+    margin: 12px;
+}
+
+footer p {
+    padding: 0px 0px 16px 16px;
+    margin: 0px 0px 30px 30px;
+}
+/* --------------------------------------------media query---------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+    nav{
+        display: flex;
+        margin: auto;
+       }
+    .logo {
+        height: 24px;
+        width: 89px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .header-content h3 {
+        font-size: 18px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column;
+        height: 732px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features .text {
+        height: 104px;
+        width: 730px;
+        display: inline-block;
+    }
+
+    .features .imagee {
+        width: 640px;
+        height: 480px;
+        margin-left: 18px;
+
+    }
+
+    .features .text h3 {
+        font-size: 32px;
+        margin-left: 260px;
+
+    }
+
+    .features .text p {
+        font-size: 18px;
+        margin-left: 18px;
+    }
+
+    #two .text h3 {
+        margin-left: 118px;
+
+    }
+
+    #two .text p {
+        margin-left: 150px;
+
+    }
+
+    #three .text h3 {
+        margin-left: 236px;
+    }
+
+    #three .text p {
+        margin-left: 95px;
+    }
+
+    #four .text h3{
+        margin-left: 218px;
+    }
+    #four .text p{
+        text-align: center;
+    }
+   
+
+}
+@media only screen and (max-width: 742px) and (min-width: 729px){
+    .header-content form{
+        margin: 0px;
+        padding: 0px;
+    }
+    }
+
+@media only screen and (max-width: 728px) {
+    .header{
+       min-width: 150%;
+       
+    }
+   nav{
+    display: flex;
+    margin: auto;
+   }
+   .features{
+    min-width: 150%;
+   }
+   .faq{
+    min-width: 150%;
+   }
+   footer{
+    min-width: 150%;
+   }
+}
